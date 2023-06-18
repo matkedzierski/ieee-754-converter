@@ -7,5 +7,6 @@ pushd ./target
 jar cfm ./application.jar ./Manifest.txt ./ieee/*
 popd
 launch4jc ./resources/execonfig.xml
-cp ./target/IEEE754Converter.exe .
+rm -f ./IEEE754Converter.exe
+mv ./target/IEEE754Converter.exe .
 rm -rf ./target
