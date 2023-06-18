@@ -1,5 +1,6 @@
 package ieee;
 
+import javax.imageio.ImageIO;
 import javax.swing.*;
 import java.awt.*;
 import org.kerbaya.ieee754lib.IEEE754;
@@ -90,9 +91,11 @@ public class MainFrame extends JFrame {
         c.add(label);
     }
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
+        UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
         MainFrame frame = new MainFrame();
-        frame.setVisible(true);
+        
+        frame.setIconImage(ImageIO.read(MainFrame.class.getResource("/icon.png")));    
         frame.pack();
         frame.setVisible(true);
     }

@@ -1,2 +1,2 @@
 Main-Class: ieee.MainFrame
-Class-Path: lib/ieee754lib-1.0.1.jar
+Class-Path: lib/ieee754lib-1.0.1.jar resources/
