@@ -1,0 +1,2 @@
+Main-Class: ieee.MainFrame
+Class-Path: ./lib
