@@ -35,7 +35,7 @@ public class MainFrame extends JFrame {
 
         mainPanel.add(Box.createRigidArea(new Dimension(10, 20)));
 
-        addLabel(mainPanel, "Wyjście (bin/hex):");
+        addLabel(mainPanel, "Wyjście (bin):");
         JTextField output = addOutput(mainPanel);
     
         convertButton.addActionListener((event)->{
